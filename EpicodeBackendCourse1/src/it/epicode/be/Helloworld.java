@@ -78,10 +78,10 @@ public static String pariDispari(int x) {
 
 public static int perimetroTriangolo(int x, int y) {
 	int sum = x*y;
+	System.out.println(sum);
 	return sum/2;
 	}
 }
-	
 
 
 
