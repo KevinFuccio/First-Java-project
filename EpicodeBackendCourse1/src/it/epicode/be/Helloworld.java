@@ -30,7 +30,9 @@ public static void main (String[] args)
 		}
 		System.out.println(Arrays.toString(newArr));
 		
+		
 		Scanner sc = new Scanner(System.in);
+		
 		System.out.println("inserisci la prima parola");
 		
 		String testo1 = sc.nextLine();
