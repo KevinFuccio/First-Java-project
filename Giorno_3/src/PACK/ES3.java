@@ -1,11 +1,14 @@
 package PACK;
 
 public class ES3 {
+	String text;
 	public void While() {
-		System.out.println("inserisci parola");
-		 String text = Main.sc.nextLine(); 
-		 while(text != "q") {
-		System.out.println("sbagliato");
-		 }
+		do {
+			System.out.println("inserisci una parola");
+			text = Main.sc.next();
+			String[] letters = text.split("");
+			System.out.println(String.join(",",text));
+		} while(!text.equals("q"));
+		System.out.println("fatto");
 	}
 }

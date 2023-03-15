@@ -6,10 +6,10 @@ public class Articolo {
 	double prezzo;
 	int nPezziDisponibili;
 	
-	public Articolo() {
-		codiceArticolo = 0;
-		descrizioneArticolo= "";
-		prezzo = 0;
-		nPezziDisponibili = 0;
+	public Articolo(String descrizione) {
+		this.codiceArticolo = 0;
+		this.descrizioneArticolo= descrizione;
+		this.prezzo = 0;
+		this.nPezziDisponibili = 0;
 	}
 }
