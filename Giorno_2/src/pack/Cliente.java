@@ -7,10 +7,20 @@ public class Cliente {
 	String email;
 	String dataIscrizione;
 	public Cliente() {
-		codiceCliente++;
-		this.nome= "";
-		this.cognome= "";
-		this.email= "";
-		this.dataIscrizione= "";
+		Name();
+		Surname();
+	}
+	public void Name() {
+		System.out.println("inserisci nome");
+		String text = Main.sc.nextLine();
+		this.nome = text;
+	}
+	public void Surname() {
+		System.out.println("inserisci cognome");
+		String text = Main.sc.nextLine();
+		this.cognome = text;
+	}
+	public void visualizzaDati() {	
+			System.out.println("Nome: "+ nome + " Cognome: " + cognome);
 	}
 }

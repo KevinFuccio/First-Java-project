@@ -1,6 +1,9 @@
 package pack;
 
+import java.util.Scanner;
+
 public class Main {
+	public static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
 		/*Rettangolo r1 = new Rettangolo(3,6);
 		
@@ -12,8 +15,7 @@ public class Main {
 //		chiamata1.ricaricaCredito(10);
 //		chiamata1.effettuaChiamata(3649724509l);
 		Cliente cliente = new Cliente();
-		Cliente cliente2 = new Cliente();
-		System.out.println(cliente.codiceCliente);
+		
 		
 	}
 }
