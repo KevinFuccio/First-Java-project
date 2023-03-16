@@ -19,44 +19,53 @@ public class Dipendente {
 	
 	public Dipendente(Dipartimento dipartimento,Livello livello) {
 		this(dipartimento);
-		this.stipendio = stipendioBase;
-		this.importoOrarioStraordinario = 30;
 		this.livello= livello;
+		this.stipendio = promuovi();
+		this.importoOrarioStraordinario = 30;
 		this.matricola= count++;
 		
 	}
 	
 	public Dipendente(Dipartimento dipartimento, double stipendio,double importoOrarioStraordinario,Livello livello) {
 		this.matricola= count++;
-		this.dipartimento = dipartimento;
-		this.stipendio = stipendioBase;
-		this.importoOrarioStraordinario = 30;
 		this.livello = livello;
+		this.dipartimento = dipartimento;
+		this.stipendio = promuovi();
+		this.importoOrarioStraordinario = 30;
 	}
 	
 	public void infoDipendente() {
 		System.out.println("matricola: "+this.matricola + "\n"+ "dipartimento: "+ this.dipartimento + "\n"+ "livello: "+ this.livello);
 	}
 	
-	public void promuovi() {
+	public double promuovi() {
+		
 		if(this.livello == Livello.OPERAIO) {
 			this.livello = Livello.IMPIEGATO;
-			this.stipendio = this.stipendio * 1.2;
+			this.stipendio = 1000;
 			System.out.println("sei stato promosso a " +this.livello);
+			return this.stipendio;
 			
 		}else if(this.livello == Livello.IMPIEGATO) {
 			this.livello = Livello.QUADRO;
-			this.stipendio = this.stipendio * 1.5;
+			this.stipendio = this.stipendio * 1.2;
 			System.out.println("sei stato promosso a " +this.livello);
+			return this.stipendio;
 			
 		}else if(this.livello == Livello.QUADRO) {
 			this.livello = Livello.DIRIGENTE;
-			this.stipendio = this.stipendio * 2;
+			this.stipendio = this.stipendio * 1.5;
 			System.out.println("sei stato promosso a " +this.livello);
+			return  this.stipendio;
 			
 		}else if(this.livello == Livello.DIRIGENTE){
 			System.out.println("non ci sono piu promozioni hai raggiunto il livello massimo");
+			this.stipendio = this.stipendio * 2;
+			return this.stipendio;
 		}
+			return this.stipendio;
+		
+		
 	}
 	
 	public static void calcolaPaga(Dipendente d) {
