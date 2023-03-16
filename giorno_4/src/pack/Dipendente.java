@@ -21,8 +21,6 @@ public class Dipendente {
 		this(dipartimento);
 		this.livello= livello;
 		this.stipendio = promuovi();
-		this.importoOrarioStraordinario = 30;
-		this.matricola= count++;
 		
 	}
 	
