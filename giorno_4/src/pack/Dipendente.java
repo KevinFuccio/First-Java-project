@@ -44,23 +44,27 @@ public class Dipendente {
 			this.livello = Livello.IMPIEGATO;
 			this.stipendio = 1000;
 			System.out.println("sei stato promosso a " +this.livello);
+			
 			return this.stipendio;
 			
 		}else if(this.livello == Livello.IMPIEGATO) {
 			this.livello = Livello.QUADRO;
 			this.stipendio = this.stipendio * 1.2;
 			System.out.println("sei stato promosso a " +this.livello);
+			
 			return this.stipendio;
 			
 		}else if(this.livello == Livello.QUADRO) {
 			this.livello = Livello.DIRIGENTE;
 			this.stipendio = this.stipendio * 1.5;
 			System.out.println("sei stato promosso a " +this.livello);
+			
 			return  this.stipendio;
 			
 		}else if(this.livello == Livello.DIRIGENTE){
 			System.out.println("non ci sono piu promozioni hai raggiunto il livello massimo");
 			this.stipendio = this.stipendio * 2;
+			
 			return this.stipendio;
 		}
 			return this.stipendio;
