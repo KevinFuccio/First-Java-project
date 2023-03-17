@@ -5,23 +5,8 @@ import java.util.Scanner;
 public class main {
 	public static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
-
 		multimediale[] m = new multimediale[2];
-		
 		codice(m);
-		
-		
-		
-		
-		
-		
-		
-//		m[0]= i;
-//		if(m[0] instanceof immagine) {
-//			immagine y = ((immagine)m[0]);
-//			y.prova();
-//		}
-		
 	}
 	public static void codice(multimediale[] m) {
 		for(int i =0; i < m.length; i++) {
@@ -54,14 +39,14 @@ public class main {
 			}
 						
 		}
-		int elemento = -1;
+		int elemento = 1;
 		
 		while(elemento != 0) {
 			System.out.println("Seleziona l'elemento che vuoi visualizzare. Premi 0 per uscire ");
 			elemento = sc.nextInt();
 			
-			if(elemento >= 1 && elemento <= m.length) {
-				multimediale oggetto = m[elemento -1];
+			if(elemento >= 1 && elemento-1 < m.length) {
+				multimediale oggetto = m[elemento-1];
 				
 				if(oggetto instanceof immagine) {
 					immagine img = (immagine)oggetto;
@@ -79,7 +64,7 @@ public class main {
 					System.out.println("l'elemento che cerchi non e corretto");
 				}
 			
-			}else {
+			}else if(elemento == 0){
 				System.out.println("perche sei uscito? :(");
 				sc.close();
 			}
