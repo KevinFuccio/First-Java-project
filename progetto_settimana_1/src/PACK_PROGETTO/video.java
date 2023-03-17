@@ -10,21 +10,26 @@ public class video extends multimediale {
 	}
 	public void play() {
 
-		if(this.durata == 0) {
+		while(this.durata == 0) {
 			System.out.println("inserisci una durata.");
-		}else {
-			for(int i=0; i< this.durata; i++) {
-				System.out.print(titolo);
-				for(int j=0;j< audio.volume; j++) {
-					System.out.print("!");
-				}
-				for(int k=0;k< luminosita; k++) {
-					System.out.print("*");
-				}
-				System.out.print("\n");
-			}
+		}for(int i=0; i< this.durata; i++) {
 			
+			System.out.print(titolo);
+			
+			for(int j=0;j< audio.volume; j++) {
+				
+				System.out.print("!");
+				
+			}
+			for(int k=0;k< luminosita; k++) {
+				
+				System.out.print("*");
+				
+			}
+			System.out.print("\n");
 		}
+			
+		
 	}
 	public void alzaLuminosita(){
 		if(luminosita >= 0) {

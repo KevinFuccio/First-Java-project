@@ -12,15 +12,18 @@ public class immagine extends multimediale {
 	
 	public void show() {
 
-		if(video.luminosita == 0) {
+		while(video.luminosita == 0) {
 			System.out.println("inserisci una luminosita.");
-		}else {
-				System.out.print(titolo);
+		}
+			System.out.print(titolo);
 			for(int i=0; i< video.luminosita; i++) {
-					System.out.print("!");
-				}
-				System.out.print("\n");
+				
+				System.out.print("!");
+				
 			}
+			
+			System.out.print("\n");
+			
 			
 		}
 	 

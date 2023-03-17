@@ -12,19 +12,24 @@ public class audio extends multimediale{
 	
 	public void play() {
 		
-		if(this.durata == 0) {
+		while(this.durata == 0) {
 			System.out.println("inserisci una durata.");
-		}else {
-			for(int i=0; i< this.durata; i++) {
-				System.out.print(titolo);
-				for(int j=0;j< volume; j++) {
-					System.out.print("!");
-				}
-				System.out.print("\n");
+			
+		}for(int i=0; i< this.durata; i++) {
+			
+			System.out.print(titolo);
+			
+			for(int j=0;j< volume; j++) {
+				
+				System.out.print("!");
+				
 			}
 			
+			System.out.print("\n");
 		}
+			
 	}
+	
 	
 	public void alzaVolume(){
 		if(volume >= 0) {
