@@ -5,9 +5,15 @@ import java.util.Scanner;
 public class main {
 	public static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
-		String text1 = sc.next("Inserisci titolo");
+		System.out.println("inserisci titolo");
+		String title = sc.nextLine();
+		System.out.println("durata");
+		int durata = sc.nextInt();
+		System.out.println("luminosita");
+		int luminosita = sc.nextInt();
 		
-		immagine i = new immagine("a",1);
+		
+		immagine i = new immagine(title,luminosita);
 		
 		
 		i.show();

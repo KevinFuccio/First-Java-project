@@ -14,6 +14,8 @@ public class audio extends multimediale{
 		
 		while(this.durata == 0) {
 			System.out.println("inserisci una durata.");
+			this.durata = main.sc.nextInt();
+			
 			
 		}for(int i=0; i< this.durata; i++) {
 			

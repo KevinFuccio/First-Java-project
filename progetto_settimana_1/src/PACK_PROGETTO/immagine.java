@@ -14,6 +14,7 @@ public class immagine extends multimediale {
 
 		while(video.luminosita == 0) {
 			System.out.println("inserisci una luminosita.");
+			video.luminosita = main.sc.nextInt();
 		}
 			System.out.print(titolo);
 			for(int i=0; i< video.luminosita; i++) {
