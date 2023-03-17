@@ -38,30 +38,26 @@ public class Dipendente {
 		
 		if(this.livello == Livello.OPERAIO) {
 			this.livello = Livello.IMPIEGATO;
-			this.stipendio = stipendioBase * 1.2;
 			System.out.println("sei stato promosso a " +this.livello);
-			
-			return this.stipendio;
 			
 		}else if(this.livello == Livello.IMPIEGATO) {
 			this.livello = Livello.QUADRO;
-			this.stipendio = stipendioBase * 1.5 ;
 			System.out.println("sei stato promosso a " +this.livello);
 			
-			return this.stipendio;
+		
 			
 		}else if(this.livello == Livello.QUADRO) {
 			this.livello = Livello.DIRIGENTE;
-			this.stipendio = stipendioBase * 2;
 			System.out.println("sei stato promosso a " +this.livello);
 			
-			return  this.stipendio;
+			
 			
 		}else if(this.livello == Livello.DIRIGENTE){
 			System.out.println("non ci sono piu promozioni hai raggiunto il livello massimo");
-			return this.stipendio;
+			
 		}
-			return this.stipendio;
+		
+			return this.stipendio();
 		
 		
 	}
@@ -71,19 +67,22 @@ public double stipendio() {
 			
 			return this.stipendio;
 			
-		}else if(this.livello == Livello.IMPIEGATO) {
+		}
+		if(this.livello == Livello.IMPIEGATO) {
 			
-			this.stipendio = this.stipendio * 1.2;
+			this.stipendio = this.stipendioBase * 1.2;
 			return this.stipendio;
 	
-		}else if(this.livello == Livello.QUADRO) {
+		}
+		if(this.livello == Livello.QUADRO) {
 			
-			this.stipendio = this.stipendio * 1.5;
+			this.stipendio = this.stipendioBase * 1.5;
 			return  this.stipendio;
 			
-		}else if(this.livello == Livello.DIRIGENTE){
+		}
+		if(this.livello == Livello.DIRIGENTE){
 			
-			this.stipendio = this.stipendio * 2;
+			this.stipendio = this.stipendioBase * 2;
 			return this.stipendio;
 		}
 			return this.stipendio;
