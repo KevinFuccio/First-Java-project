@@ -65,7 +65,7 @@ public class main {
 				}
 			
 			}else if(elemento == 0){
-				System.out.println("perche sei uscito? :(");
+				System.out.println("perche sei uscito vitaah? :(");
 				sc.close();
 			}
 			
