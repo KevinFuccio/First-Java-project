@@ -65,7 +65,7 @@ public class Main {
 	public static List<Integer> arrInverso(List<Integer> a) {
 		List<Integer> lista = new ArrayList<>(a);
 		Collections.reverse(lista);
-        lista.addAll(lista);
+        lista.addAll(a);
         System.out.println(lista);
         return lista;
 	}
