@@ -4,11 +4,11 @@ public class Archivio {
 
 	private static Long counter = 1l;
 	public String titolo;
-	Long yearOfPublishing;
+	private int yearOfPublishing;
 	int numberOfPages;
 	private Long ISBN = 0l;
 
-	public Archivio(String string, Long i, int j ) {
+	public Archivio(String string, int i, int j ) {
 
 	        this.titolo=string;
 	        this.yearOfPublishing=i;
@@ -22,5 +22,8 @@ public class Archivio {
 
 	public Long getISBN() {
 		return this.ISBN;
+	}
+	public int getYearOfPublishing() {
+		return this.yearOfPublishing;
 	}
 }

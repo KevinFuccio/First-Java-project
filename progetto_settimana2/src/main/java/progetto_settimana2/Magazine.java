@@ -9,7 +9,7 @@ public class Magazine extends Archivio {
 
 	Enum<Magazine_frequency> frequencyOfPublishing;
 
-	public Magazine(Enum<Magazine_frequency> frequencyOfPublishing, String titolo, Long anno, int nPagine) {
+	public Magazine(Enum<Magazine_frequency> frequencyOfPublishing, String titolo, int anno, int nPagine) {
 		super(titolo, anno, nPagine);
 	
 		this.frequencyOfPublishing = frequencyOfPublishing;
@@ -20,7 +20,7 @@ public class Magazine extends Archivio {
 
 	public String toString() {
 		return "\n" + "\nTitle: " + this.titolo + "\nNumber of pages:" + this.numberOfPages + "\nYear of publishing: "
-				+ this.yearOfPublishing + "\nISBN CodeMagazine: " + super.getISBN();
+				+ super.getYearOfPublishing() + "\nISBN CodeMagazine: " + super.getISBN();
 
 	}
 }

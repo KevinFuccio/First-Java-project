@@ -35,7 +35,7 @@ public class Catalogo {
 		System.out.println(newCatalogo);
 	}
 	public void searchByYear(int year) {
-		List<Archivio> newCatalogo = catalogo.stream().filter(e -> e.yearOfPublishing.equals(year)).collect(Collectors.toList());
+		List<Archivio> newCatalogo = catalogo.stream().filter(e -> e.getYearOfPublishing() == year).collect(Collectors.toList());
 		System.out.println(newCatalogo);
 	}
 	public void searchByAuthor(String author) {
