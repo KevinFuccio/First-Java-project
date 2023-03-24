@@ -1,0 +1,62 @@
+
+[
+
+Title: le avventure di Lanim
+Author: Alfio
+Genre: ADVENTURE
+Number of pages:376
+Year of publishing: 2020
+ISBN Code: 1, 
+
+Title: La guerra di Lanim
+Author: Alfio
+Genre: HISTORY
+Number of pages:220
+Year of publishing: 2017
+ISBN Code: 2, 
+
+Title: GigaIapi
+Author: Alfio
+Genre: ADVENTURE
+Number of pages:300
+Year of publishing: 2022
+ISBN Code: 3, 
+
+Title: 13... giorni di stipendio
+Author: Alfio
+Genre: HISTORY
+Number of pages:376
+Year of publishing: 2022
+ISBN Code: 7, 
+
+Title: la storia di Lanim
+Author: Giuseppe
+Genre: ADVENTURE
+Number of pages:456
+Year of publishing: 2020
+ISBN Code: 5, 
+
+Title: Alfonzo
+Number of pages:350
+Year of publishing: 1998
+ISBN CodeMagazine: 10, 
+
+Title: Le avventure di bebo
+Number of pages:153
+Year of publishing: 2020
+ISBN CodeMagazine: 9, 
+
+Title: Le avventure di Luca
+Number of pages:300
+Year of publishing: 2020
+ISBN CodeMagazine: 12, 
+
+Title: Le avventure di bebo 3
+Number of pages:78
+Year of publishing: 2023
+ISBN CodeMagazine: 16, 
+
+Title: Le avventure di Dani
+Number of pages:2
+Year of publishing: 2019
+ISBN CodeMagazine: 13]

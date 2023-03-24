@@ -1,5 +1,9 @@
 package progetto_settimana2;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -36,6 +40,13 @@ public class Catalogo {
 	public void searchByAuthor(String author) {
 		List<Archivio> newCatalogo = catalogo.stream().filter(e -> e instanceof Book).map(e -> (Book)e).filter(e -> e.author.equals(author)).collect(Collectors.toList());
 		System.out.println(newCatalogo);
+	}
+	public static void WriteFile(Catalogo catalogo2) throws IOException {
+		File file1 = new File("catalogo.txt");
+		FileWriter fw = new FileWriter(file1);
+		PrintWriter pw = new PrintWriter(fw);
+		pw.print(catalogo2);
+		pw.close();
 	}
 
 	

@@ -1,11 +1,13 @@
 package progetto_settimana2;
 
+import java.io.IOException;
+
 import lombok.ToString;
 
 @ToString
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		Book book1 = new Book("Alfio", Book_Genre.ADVENTURE,"le avventure di Lanim",2020l,376);
 		Book book2 = new Book("Alfio", Book_Genre.HISTORY,"La guerra di Lanim",2017l,220);
 		Book book3 = new Book("Alfio", Book_Genre.ADVENTURE,"GigaIapi",2022l,300);
@@ -37,8 +39,9 @@ public class Main {
 		catalogo.addToCatalogo(magazine4);
 		catalogo.addToCatalogo(magazine8);
 		catalogo.addToCatalogo(magazine5);
+	
 		
-		catalogo.searchByAuthor("Giuseppe");
+		Catalogo.WriteFile(catalogo);
 		
 	}	
 
