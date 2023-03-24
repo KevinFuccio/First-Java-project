@@ -42,6 +42,7 @@ public class Main {
 	
 		
 		Catalogo.WriteFile(catalogo);
+		Catalogo.ReadFile();
 		
 	}	
 

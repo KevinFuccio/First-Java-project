@@ -7,6 +7,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import org.apache.commons.io.FileUtils;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.ToString;
@@ -48,6 +49,12 @@ public class Catalogo {
 		pw.print(catalogo2);
 		pw.close();
 	}
+	public static void ReadFile() throws IOException {
+		File file1 = new File("catalogo.txt");
+		String a = FileUtils.readFileToString(file1,"UTF-8");
+		System.out.println(a);
+	}
+
 
 	
 	public String toString() {
